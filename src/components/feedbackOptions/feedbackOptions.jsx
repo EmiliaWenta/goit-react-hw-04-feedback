@@ -8,7 +8,7 @@ export const FeedbackOptions = ({ options, click }) => {
       {options.map(item => (
         <button
           className={css.button__item}
-          onClick={click}
+          onClick={() => click(item)}
           type="button"
           key={item}
         >
