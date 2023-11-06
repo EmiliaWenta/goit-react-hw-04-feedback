@@ -1,27 +1,14 @@
-import React from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from 'react';
 import css from './feedback.module.css';
+import FeedbackOptionsItem from './feedbackOptionsItem/feedbackOptionsItem';
 
-export const FeedbackOptions = ({ options, click }) => {
+export default function FeedbackOptions() {
+  const [options] = useState(['good', 'neutral', 'bad']);
   return (
     <div className={css.button}>
-      {options.map(item => (
-        <button
-          className={css.button__item}
-          onClick={() => click(item)}
-          type="button"
-          key={item}
-        >
-          {item}
-        </button>
-      ))}
+      {options.map(option => {
+        return <FeedbackOptionsItem option={option} key={option} />;
+      })}
     </div>
   );
-};
-
-FeedbackOptions.propTypes = {
-  options: PropTypes.arrayOf(PropTypes.string).isRequired,
-  click: PropTypes.func.isRequired,
-};
-
-export default FeedbackOptions;
+}

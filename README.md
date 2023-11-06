@@ -1,6 +1,6 @@
 # Feedback using hooks
 
-> Task nr 4A  from GoIT course - module: React.js Live demo
+> Task nr 4A from GoIT course - module: React.js Live demo
 > [_here_](https://emiliawenta.github.io/goit-react-hw-04-feedback/).
 
 ## Table of Contents
@@ -20,10 +20,10 @@
 - Task goal: learnig how to using useState() hooks.
 - Main setup and functionality.
   - You can using this to collect customer satisfaction information.
-  - You have 3 options:  goods, neutral and bad. 
+  - You have 3 options: goods, neutral and bad.
   - This will count how many clicks there were on each option.
   - This will count how many times it has been clicked.
-  - This will show You hom many percent was positive.  
+  - This will show You hom many percent was positive.
 
 ## Technologies Used
 
@@ -63,4 +63,3 @@ Project is: _complete_
 
 Created by [@EmiliaWenta](https://github.com/EmiliaWenta) - feel free to contact
 me!
-

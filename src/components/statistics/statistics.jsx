@@ -1,24 +1,18 @@
 import React from 'react';
-import PropTypes from 'prop-types';
+import StatisticsItem from './statisticsItem.js/statisticsItem';
 
-const Statistics = ({ good, neutral, bad, total, percentage }) => {
+import { useFeedback } from 'hooks/feedbackContext';
+
+export default function Statistics() {
+  const { good, neutral, bad, total, positivePercentage } = useFeedback();
+
   return (
     <div>
-      <p>Good: {good} </p>
-      <p>Neutral: {neutral} </p>
-      <p>Bad: {bad} </p>
-      <p>Total: {total}</p>
-      <p>Positive feedback: {percentage}%</p>
+      <StatisticsItem title="Good" value={good} />
+      <StatisticsItem title="Neutral" value={neutral} />
+      <StatisticsItem title="Bad" value={bad} />
+      <StatisticsItem title="Total" value={total} />
+      <StatisticsItem title="Positive Feedback" value={positivePercentage} />
     </div>
   );
-};
-
-Statistics.propTypes = {
-  good: PropTypes.number.isRequired,
-  neutral: PropTypes.number.isRequired,
-  bad: PropTypes.number.isRequired,
-  total: PropTypes.number.isRequired,
-  percentage: PropTypes.number.isRequired,
-};
-
-export default Statistics;
+}
