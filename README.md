@@ -37,7 +37,8 @@ Project is created with:
 
 ## Screenshots
 
-![image](https://github.com/EmiliaWenta/goit-react-hw-04-feedback/assets/126571469/29dac64f-cad0-4e3c-a083-e5d604348176)
+![image](https://github.com/EmiliaWenta/goit-react-hw-04-feedback/assets/126571469/b6bba6de-7b7a-44e0-b19a-21d158de30f2)
+
 
 ## Setup
 
